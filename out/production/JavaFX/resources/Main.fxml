@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+
+    <Button layoutX="345.0" layoutY="355.0" mnemonicParsing="false" onAction="#btnRegisterClick"
+            prefHeight="30.0" prefWidth="80.0" text="软件注册">
+        <font>
+            <Font name="Sarasa UI SC Bold" size="13.0"/>
+        </font>
+    </Button>
+
+    <Button fx:id="btnExit" layoutX="480.0" layoutY="355.0" mnemonicParsing="false" onAction="#btnExitClick"
+            prefHeight="30.0" prefWidth="80.0" text="退出程序">
+        <font>
+            <Font name="Sarasa UI SC Bold" size="13.0"/>
+        </font>
+    </Button>
+
+    <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@BG.jpg"/>
+    </ImageView>
+
+    <Separator layoutY="325.0" prefHeight="10.0" prefWidth="600.0"/>
+
+    <Separator layoutX="155.0" layoutY="160.0" prefHeight="10.0" prefWidth="330.0" rotate="90.0"/>
+
+    <TextArea editable="false" layoutX="330.0" layoutY="72.0" prefHeight="232.0" prefWidth="260.0"
+              text="请务必仔细阅读和理解此软件最终用户许可协议（“本《协议》”）中规定的所有权利和限制。在安装时，您需要仔细阅读并决定接受或不接受本《协议》的条款。除非或直至您接受本《协议》的条款，否则本“软件”不得安装在您的计算机上。&#10;&#10;作为参考，您现在就可以从本页起打印出本《协议》的文本，或者参阅本“软件”“帮助”文件中本《协议》的副本。&#10;&#10;本“软件”包括随附的计算机软件，并可能包括相关文档印刷材料。您一旦安装本“软件”，即表示您同意接受本《协议》各项条款的约束。如您不同意本《协议》中的条款，您则不可以安装或使用本“软件”。&#10;&#10;本“软件”受著作权法及国际著作权条约和其它知识产权法和条约的保护。本“软件”权利只许可使用，而不出售。&#10;&#10;本软件将 MD5 加密算法应用于软件著作权保护，支持文本加密和文件加密。&#10;&#10;本软件将读取您的 MAC 地址和系统注册表，并在其中写入您的用户信息。&#10;&#10;为了不断提高本“软件”和服务的质量，我们将有可能搜集您对本“软件”进行使用的信息，并不定期地予以反馈。&#10;&#10;我们不会搜集您的姓名、地址、联系方式等个人信息以及文件内容等涉及信息安全的信息。&#10;&#10;以上搜集的信息仅仅为了市场分析需要，以便我们今后能够为您提供更好的功能和服务，我们对此数据严格保密。&#10;&#10;本条所指搜集信息的范围以我们适时的技术水平为判断标准。我们将尽最大努力力求判断的准确性，但因受到现实技术水平等的限制，我们仅依照自有的判断能力进行甄别收集。您已明确知悉上述内容，且认可我们的操作，愿意承担因此而可能造成的损失。&#10;&#10;至此，您肯定已经详细阅读并已理解本《协议》，并同意严格遵守各条款和条件。&#10;"
+              wrapText="true">
+        <font>
+            <Font name="Sarasa UI SC" size="13.0"/>
+        </font>
+    </TextArea>
+
+    <Label contentDisplay="CENTER" layoutX="348.0" layoutY="30.0" prefHeight="32.0" prefWidth="224.0" text="软件最终用户许可协议"
+           textAlignment="RIGHT">
+        <font>
+            <Font name="Sarasa UI SC Semibold Italic" size="22.0"/>
+        </font>
+    </Label>
+
+    <Label contentDisplay="CENTER" layoutX="45.0" layoutY="340.0" prefHeight="46.0" prefWidth="230.0"
+           text="All Rights Reserved @ Rocinante 2020-2020" wrapText="true">
+        <font>
+            <Font name="System Italic" size="14.0"/>
+        </font>
+    </Label>
+</AnchorPane>

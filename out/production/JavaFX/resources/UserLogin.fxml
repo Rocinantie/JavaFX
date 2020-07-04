@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserLoginController">
+
+    <Button layoutX="353.0" layoutY="271.0" mnemonicParsing="false" onAction="#btnLoginClick"
+            prefHeight="30.0" prefWidth="80.0" text="登录">
+        <font>
+            <Font name="Sarasa UI SC Bold" size="13.0"/>
+        </font>
+    </Button>
+
+    <Button fx:id="btnExit" layoutX="488.0" layoutY="271.0" mnemonicParsing="false" onAction="#btnExitClick"
+            prefHeight="30.0" prefWidth="80.0" text="退出">
+        <font>
+            <Font name="Sarasa UI SC Bold" size="13.0"/>
+        </font>
+    </Button>
+
+    <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@BG.jpg"/>
+    </ImageView>
+
+    <Separator layoutY="325.0" prefHeight="10.0" prefWidth="600.0"/>
+
+    <Separator layoutX="155.0" layoutY="160.0" prefHeight="10.0" prefWidth="330.0" rotate="90.0"/>
+
+    <Label fx:id="prompt" alignment="CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="61.0" prefHeight="40.0"
+           prefWidth="280.0" text="用户登录" textAlignment="RIGHT">
+        <font>
+            <Font name="System Italic" size="18.0"/>
+        </font>
+    </Label>
+
+    <TextField fx:id="userNameField" layoutX="360.0" layoutY="142.0" prefHeight="35.0" prefWidth="199.0"
+               promptText="用户名" text="admin"/>
+    <PasswordField fx:id="passwordField" layoutX="360.0" layoutY="202.0" prefHeight="35.0" prefWidth="199.0"
+                   promptText="密码" text="admin"/>
+
+    <Label contentDisplay="CENTER" layoutX="45.0" layoutY="340.0" prefHeight="46.0" prefWidth="230.0"
+           text="All Rights Reserved @ Rocinante 2020-2020" wrapText="true">
+        <font>
+            <Font name="System Italic" size="14.0"/>
+        </font>
+    </Label>
+
+</AnchorPane>
